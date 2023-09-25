@@ -1,0 +1,14 @@
+import rodados.*
+import dependencias.*
+
+describe "test dependencias" {
+	const deportes = new Dependencia(cantEmpleado=45)
+	const cultura = new Dependencia(cantEmpleado=31)
+	
+	
+	method initialize(){
+		const cachito = new ChevroletCorsa(color='rojo')
+		deportes.agregarAFlota(cachito)
+		cultura.agregarAFlota(cachito)
+	}
+}
